@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { PiSunHorizonFill } from "react-icons/pi";
 
 export default function Footer() {
   return (
     <footer className="  bg-orange-50 border-t mt-16">
-      <div className="max-w-10/12 mx-auto px-4 md:px-10 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="max-w-10/12 mx-auto px-4 md:px-10 py-10 grid grid-cols-1 md:grid-cols-3 gap-30">
         <div>
-          <h2 className="text-2xl font-bold text-orange-500">SunCart</h2>
+          <h2 className="text-2xl font-bold text-orange-500 flex items-center gap-2"> <PiSunHorizonFill className="h-10 w-10"/> SunCart</h2>
           <p className="mt-3 text-gray-600">
             Your summer essentials store for outfits, skincare, accessories, and beach products.
           </p>
