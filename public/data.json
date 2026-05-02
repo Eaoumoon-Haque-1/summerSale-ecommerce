@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Stylish UV protection sunglasses perfect for summer outings.",
+    "image": "https://i.postimg.cc/3x3QzSGq/sunglasses.jpg",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "Aloe Vera Sunscreen SPF 50",
+    "brand": "GlowCare",
+    "price": 22,
+    "rating": 4.8,
+    "stock": 18,
+    "description": "Lightweight sunscreen with aloe vera protection for hot summer days.",
+    "image": "https://i.postimg.cc/J0MgPZy5/sunscreen.jpg",
+    "category": "Skincare"
+  },
+  {
+    "id": 3,
+    "name": "Beach Straw Hat",
+    "brand": "BeachBloom",
+    "price": 12,
+    "rating": 4.5,
+    "stock": 14,
+    "description": "Breathable straw hat designed to protect you from direct sunlight.",
+    "image": "https://i.postimg.cc/bv2xmffq/straw-hat.jpg",
+    "category": "Accessories"
+  },
+  {
+    "id": 4,
+    "name": "Summer Floral Shirt",
+    "brand": "SunnyWear",
+    "price": 28,
+    "rating": 4.6,
+    "stock": 20,
+    "description": "Comfortable and colorful floral shirt for summer vacations and casual wear.",
+    "image": "https://i.postimg.cc/B6WzS1Gw/floral-shirt.jpg",
+    "category": "Outfits"
+  },
+  {
+    "id": 5,
+    "name": "Insulated Water Bottle",
+    "brand": "HydroCool",
+    "price": 18,
+    "rating": 4.9,
+    "stock": 25,
+    "description": "Keeps your water cold for hours, perfect for outdoor summer activities.",
+    "image": "https://i.postimg.cc/15hYgk4z/water-bottle.jpg",
+    "category": "Essentials"
+  },
+  {
+    "id": 6,
+    "name": "Beach Sandals",
+    "brand": "WaveStep",
+    "price": 20,
+    "rating": 4.4,
+    "stock": 16,
+    "description": "Soft, lightweight beach sandals made for comfort and summer travel.",
+    "image": "https://i.postimg.cc/3wBnR3xV/sandals.jpg",
+    "category": "Footwear"
+  }
+]
