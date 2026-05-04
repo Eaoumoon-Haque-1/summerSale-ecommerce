@@ -5,15 +5,17 @@ import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 
 export default async function ProductDetailsPage({ params }) {
+  const { id } = await params;
+
   const session = await auth.api.getSession({
     headers: await headers(),
   });
 
   if (!session) {
-    redirect(`/login?callbackURL=/products/${params.id}`);
+    redirect(`/login?callbackURL=/products/${id}`);
   }
 
-  const product = products.find((item) => item.id == Number(params.id));
+  const product = products.find((item) => String(item.id) === String(id));
 
   if (!product) {
     return <h1 className="text-center py-20 text-3xl">Product Not Found</h1>;
@@ -27,6 +29,7 @@ export default async function ProductDetailsPage({ params }) {
             src={product.image}
             alt={product.name}
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
           />
         </div>
