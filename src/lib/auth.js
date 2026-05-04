@@ -6,16 +6,18 @@ const client = new MongoClient(process.env.MONGODB_URI);
 const db = client.db("summer-sale");
 
 export const auth = betterAuth({
-  database: mongodbAdapter(db, {
-    // Optional: if you don't provide a client, database transactions won't be enabled.
-    client
-  }), emailAndPassword: { 
-    enabled: true, 
+  database: mongodbAdapter(db, { client }),
+  trustedOrigins: [
+    "https://summer-sale-ecommerce.vercel.app",
+    /https:\/\/summer-sale-ecommerce-.*\.vercel\.app/,
+  ],
+  emailAndPassword: {
+    enabled: true,
   },
-  socialProviders:{
-    google: { 
-            clientId: process.env.GOOGLE_CLIENT_ID, 
-            clientSecret: process.env.GOOGLE_CLIENT_SECRET, 
-        }, 
-  }
+  socialProviders: {
+    google: {
+      clientId: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    },
+  },
 });
