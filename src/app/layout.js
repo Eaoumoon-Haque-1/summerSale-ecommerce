@@ -13,16 +13,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable}`}
-    >
-      <Navbar></Navbar>
-      <body className="min-h-full flex flex-col">{children}</body>
-      <Footer></Footer>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }

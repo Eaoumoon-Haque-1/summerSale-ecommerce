@@ -7,7 +7,7 @@
     "rating": 4.7,
     "stock": 10,
     "description": "Stylish UV protection sunglasses perfect for summer outings.",
-    "image": "https://i.postimg.cc/3x3QzSGq/sunglasses.jpg",
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=800&auto=format&fit=crop",
     "category": "Accessories"
   },
   {
@@ -18,7 +18,7 @@
     "rating": 4.8,
     "stock": 18,
     "description": "Lightweight sunscreen with aloe vera protection for hot summer days.",
-    "image": "https://i.postimg.cc/J0MgPZy5/sunscreen.jpg",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=800&auto=format&fit=crop",
     "category": "Skincare"
   },
   {
@@ -29,7 +29,7 @@
     "rating": 4.5,
     "stock": 14,
     "description": "Breathable straw hat designed to protect you from direct sunlight.",
-    "image": "https://i.postimg.cc/bv2xmffq/straw-hat.jpg",
+    "image": "https://images.unsplash.com/photo-1529958030586-3aae4ca485ff?q=80&w=800&auto=format&fit=crop",
     "category": "Accessories"
   },
   {
@@ -40,7 +40,7 @@
     "rating": 4.6,
     "stock": 20,
     "description": "Comfortable and colorful floral shirt for summer vacations and casual wear.",
-    "image": "https://i.postimg.cc/B6WzS1Gw/floral-shirt.jpg",
+    "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=800&auto=format&fit=crop",
     "category": "Outfits"
   },
   {
@@ -51,7 +51,7 @@
     "rating": 4.9,
     "stock": 25,
     "description": "Keeps your water cold for hours, perfect for outdoor summer activities.",
-    "image": "https://i.postimg.cc/15hYgk4z/water-bottle.jpg",
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?q=80&w=800&auto=format&fit=crop",
     "category": "Essentials"
   },
   {
@@ -62,7 +62,7 @@
     "rating": 4.4,
     "stock": 16,
     "description": "Soft, lightweight beach sandals made for comfort and summer travel.",
-    "image": "https://i.postimg.cc/3wBnR3xV/sandals.jpg",
+    "image": "https://images.unsplash.com/photo-1603487742131-4160ec999306?q=80&w=800&auto=format&fit=crop",
     "category": "Footwear"
   }
 ]
