@@ -1,11 +1,14 @@
 "use client";
 
 import { authClient } from "@/lib/auth-client";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { GrGoogle } from "react-icons/gr";
 
 export default function LoginPage() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+
+  const callbackURL = searchParams.get("callbackURL") || "/";
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -13,7 +16,7 @@ export default function LoginPage() {
     const { error } = await authClient.signIn.email({
       email: e.target.email.value,
       password: e.target.password.value,
-      callbackURL: "/",
+      callbackURL,
     });
 
     if (error) {
@@ -21,13 +24,14 @@ export default function LoginPage() {
       return;
     }
 
-    router.push("/");
+    router.push(callbackURL);
+    router.refresh();
   };
 
   const handleGoogleSignIn = async () => {
     await authClient.signIn.social({
       provider: "google",
-      callbackURL: "/",
+      callbackURL,
     });
   };
 
